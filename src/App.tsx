@@ -20,6 +20,7 @@ function App() {
 
 	const handleDeletePhoto = (photo: Photo) => {
 		setPhotos(photos.filter((p) => p.id !== photo.id))
+		setShowDetail(false)
 	}
 
 	const handleOpenForm = () => {
