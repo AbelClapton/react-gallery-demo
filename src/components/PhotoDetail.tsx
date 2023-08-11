@@ -21,7 +21,13 @@ type Props = {
 const PhotoDetail: FC<Props> = ({ open, photo, onEdit, onDelete, onClose }) => {
 	return (
 		<>
-			<Modal open={open} style={{ backdropFilter: 'blur(5px)' }}>
+			<Modal
+				open={open}
+				style={{
+					backdropFilter: 'blur(5px)',
+					backgroundColor: 'rgba(0,0,0,0.8)',
+				}}
+			>
 				<>
 					<Box textAlign="end">
 						<IconButton
