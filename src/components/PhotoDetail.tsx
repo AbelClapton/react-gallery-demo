@@ -54,11 +54,11 @@ const PhotoDetail: FC<Props> = ({ open, photo, onEdit, onDelete, onClose }) => {
 					>
 						<Grid
 							container
-							columns={{ xs: 1, md: 3 }}
+							columns={{ xs: 1, md: 4 }}
 							style={{ height: '100%' }}
 							paddingTop={6}
 						>
-							<Grid item xs={1} md={2} justifyContent="center">
+							<Grid item xs={1} md={3} justifyContent="center">
 								<img src={photo?.url} alt="" />
 							</Grid>
 							<Grid item xs={1} md={1}>
