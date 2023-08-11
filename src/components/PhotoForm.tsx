@@ -69,7 +69,7 @@ const PhotoForm: FC<Props> = ({ open, photo, onSubmit, onClose }) => {
 						<Step key={1}>
 							<StepLabel>Photo Details</StepLabel>
 							<StepContent>
-								<Stack spacing={2} sx={{ py: 2, width: 300 }}>
+								<Stack spacing={2} sx={{ py: 3, width: 300 }}>
 									<TextField
 										label="Title"
 										value={title}
