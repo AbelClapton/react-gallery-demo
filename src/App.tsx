@@ -50,7 +50,14 @@ function App() {
 		<>
 			<Navbar onAddPhoto={handleOpenForm} />
 			<Container fixed sx={{ p: 4 }} component="main">
-				<ImageList cols={4}>
+				<ImageList
+					gap={12}
+					sx={{
+						mb: 8,
+						gridTemplateColumns:
+							'repeat(auto-fill, minmax(250px, 1fr))!important',
+					}}
+				>
 					{photos.map((photo) => (
 						<ImageListItem
 							key={photo.id}
